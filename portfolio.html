@@ -1,0 +1,207 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Akkipalli Sri Usha - Portfolio</title>
+  <style>
+    body {
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+      background-color: #fdfdfd;
+      margin: 0;
+      padding: 0;
+      color: #333;
+    }
+    header {
+      background-color: #4b6cb7;
+      background-image: linear-gradient(to right, #4b6cb7, #182848);
+      color: white;
+      padding: 2rem;
+      text-align: center;
+    }
+    header h1 {
+      margin: 0;
+      font-size: 2.5rem;
+    }
+    header p {
+      font-size: 1.1rem;
+      margin: 0.5rem 0 0;
+    }
+    nav {
+      display: flex;
+      justify-content: center;
+      flex-wrap: wrap;
+      background-color: #eee;
+      padding: 0.5rem;
+    }
+    nav button {
+      background-color: #4b6cb7;
+      color: white;
+      border: none;
+      padding: 0.6rem 1rem;
+      margin: 0.5rem;
+      border-radius: 5px;
+      cursor: pointer;
+      transition: background-color 0.3s;
+    }
+    nav button:hover {
+      background-color: #182848;
+    }
+    .section {
+      max-width: 900px;
+      margin: 2rem auto;
+      padding: 0 1rem;
+      display: none;
+    }
+    .section.active {
+      display: block;
+    }
+    h2 {
+      color: #4b6cb7;
+      border-bottom: 2px solid #ccc;
+      padding-bottom: 0.3rem;
+    }
+    ul {
+      list-style-type: square;
+      padding-left: 1.2rem;
+    }
+    .project p.readme {
+      display: none;
+      margin-top: 0.5rem;
+      color: #555;
+      background-color: #f3f3f3;
+      padding: 0.5rem;
+      border-left: 3px solid #4b6cb7;
+    }
+    .project button {
+      background-color: #fff;
+      color: #4b6cb7;
+      border: 1px solid #4b6cb7;
+      padding: 0.3rem 0.6rem;
+      border-radius: 3px;
+      cursor: pointer;
+    }
+    .project button:hover {
+      background-color: #4b6cb7;
+      color: white;
+    }
+    footer {
+      text-align: center;
+      padding: 1rem;
+      background-color: #eee;
+      font-size: 0.9rem;
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <h1>Akkipalli Sri Usha</h1>
+    <p><a href="#contact">Contact</a> | <a href="https://linkedin.com/in/akkipalli-sriushaakkipalli-sriusha" target="_blank">LinkedIn</a></p>
+  </header>
+
+  <nav>
+    <button onclick="showSection('summary')">Summary</button>
+    <button onclick="showSection('skills')">Skills</button>
+    <button onclick="showSection('education')">Education</button>
+    <button onclick="showSection('certifications')">Certifications</button>
+    <button onclick="showSection('projects')">Projects</button>
+    <button onclick="showSection('experience')">Experience</button>
+    <button onclick="showSection('awards')">Awards</button>
+    <button onclick="showSection('languages')">Languages</button>
+  </nav>
+
+  <section id="summary" class="section active">
+    <h2>Summary</h2>
+    <p>Enthusiastic Computer Science undergraduate specializing in AI & ML. Strong analytical thinking and problem-solving abilities. Passionate about impactful software projects and teamwork in fast-paced environments.</p>
+  </section>
+
+  <section id="skills" class="section">
+    <h2>Skills</h2>
+    <ul>
+      <li><strong>Languages:</strong> Java, Basics of Python and C, HTML</li>
+      <li><strong>Core Concepts:</strong> Data Structures, DBMS</li>
+      <li><strong>Tools:</strong> MS Word, Excel, PowerPoint</li>
+      <li><strong>Soft Skills:</strong> Problem-solving, Communication, Team Collaboration</li>
+    </ul>
+  </section>
+
+  <section id="education" class="section">
+    <h2>Education</h2>
+    <p><strong>G. Narayanamma Institute of Technology and Science, Hyderabad</strong><br />
+      B.Tech in Computer Science and Engineering – AI & ML<br />
+      Expected Graduation: 2026<br />
+      CGPA: 9.45 / 10
+    </p>
+  </section>
+
+  <section id="certifications" class="section">
+    <h2>Certifications</h2>
+    <ul>
+      <li>IBM – Getting Started with Enterprise-grade AI (Oct 2023)</li>
+      <li>Professional Development Course – Completion (May–Sept 2023)</li>
+      <li>Professional Development Course – Excellence (Dec 2022 – Apr 2023)</li>
+    </ul>
+  </section>
+
+  <section id="projects" class="section">
+    <h2>Projects</h2>
+    <div class="project">
+      <strong>Fake Image Detection (CNN-based)</strong>
+      <p><button onclick="toggleReadme(this)">README</button></p>
+      <p class="readme">This project uses a Convolutional Neural Network to analyze image features and detect signs of manipulation. The model was trained on a curated dataset of real and tampered images and achieved high accuracy in classifying image authenticity.</p>
+    </div>
+    <div class="project">
+      <strong>Skill Development Platform (Web-based)</strong>
+      <p><button onclick="toggleReadme(this)">README</button></p>
+      <p class="readme">Developed a simple web-based application to enable peer-to-peer learning. Users can either create skill-sharing posts to teach topics or browse and enroll in sessions shared by others. Built using HTML, CSS, and basic JavaScript.</p>
+    </div>
+  </section>
+
+  <section id="experience" class="section">
+    <h2>Experience</h2>
+    <p><strong>Class Social Media Coordinator – GNITS</strong> <em>(Nov 2023 – Present)</em><br />
+      Managed internal communication and created engaging content to support academic collaboration.
+    </p>
+    <p><strong>Smart India Hackathon ’23 – Participant</strong><br />
+      Contributed to real-world project idea.
+    </p>
+  </section>
+
+  <section id="awards" class="section">
+    <h2>Awards & Achievements</h2>
+    <ul>
+      <li>Soft Skills & Professional Etiquette Certificate (2023)</li>
+      <li>Professional Development Program Recognition</li>
+    </ul>
+  </section>
+
+  <section id="languages" class="section">
+    <h2>Languages</h2>
+    <ul>
+      <li>Telugu (Native)</li>
+      <li>English (Fluent)</li>
+    </ul>
+  </section>
+
+  <section id="contact" class="section">
+    <h2>Contact</h2>
+    <p>To contact me, please reach out via <a href="https://linkedin.com/in/akkipalli-sriushaakkipalli-sriusha" target="_blank">LinkedIn</a>.</p>
+  </section>
+
+  <footer>
+    &copy; 2025 Akkipalli Sri Usha. All rights reserved.
+  </footer>
+
+  <script>
+    function showSection(id) {
+      document.querySelectorAll('.section').forEach(sec => sec.classList.remove('active'));
+      document.getElementById(id).classList.add('active');
+    }
+
+    function toggleReadme(button) {
+      const readme = button.parentElement.nextElementSibling;
+      readme.style.display = readme.style.display === 'block' ? 'none' : 'block';
+    }
+  </script>
+</body>
+</html>
